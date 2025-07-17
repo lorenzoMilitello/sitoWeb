@@ -1,0 +1,149 @@
+
+body {
+      background-color: #f5f0e1; /* beige chiaro */
+      color: #4e342e; /* marrone scuro */
+      font-family:'Noto Sans';
+    
+    }
+  /* provaaa */
+   
+
+    .navbar {
+      background-color: #d7ccc8; /* beige-marrone */
+    }
+
+    .navbar a {
+      color: #4e342e;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      color: #a1887f;
+    }
+
+    .cover {
+  position: relative;
+  height: 250px;
+  background: url('../img/home3.png') center center / cover no-repeat;
+  overflow: hidden;
+  color: white;
+}
+
+.cover::before {
+  content:"normal";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  filter: blur(2px);
+  transform: scale(1.1);
+  z-index: 0;
+}
+
+.cover h1,h2,
+.cover .title {
+  position: relative;
+  z-index: 1;
+}
+.cover h1{
+  font-size: 70px;
+  
+}
+.coverKappa{
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      
+      height: 300px; 
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 1px 5px #000;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    
+    .title{
+       writing-mode: vertical-rl;
+       text-orientation:upright;
+       overflow: hidden;
+      white-space: nowrap;
+     
+    }
+
+    .titleKappa{
+       writing-mode: vertical-rl;
+       text-orientation:upright;
+       overflow: hidden;
+      white-space: nowrap;
+      transform: translateY(25%);
+    font-size: 3rem;
+    }
+
+    .content {
+      padding: 40px 20px;
+    }
+    .card {
+      background-color: #efebe9;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card img{
+      height: 300px;
+       object-fit: cover;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    #filtro:hover{
+      transform: none;
+    }
+    .card-title {
+      min-height: 80px; 
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .card-title a {
+      text-decoration: none;
+      color: #4e342e;
+      font-weight: bold;
+    }
+
+    .card-title a:hover {
+      color: #3e2723;
+    }
+    .breadcrumb {
+      text-decoration: none;
+      padding: 10px 30px;
+    }
+    /* pagination */
+.page-link {
+  background-color: #f5f0e6; /* beige chiaro */
+  color: #5a3e2b; /* marrone scuro */
+  border: 1px solid #d8c3a5;
+}
+.page-item.active .page-link {
+  background-color: #c9a27e; /* beige-marrone più marcato */
+  border-color: #b88b6b;
+  color: #fff;
+}
+    
+    footer {
+      background-color: #d7ccc8;
+      color: #4e342e;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    .titleWebProjectPlan{
+      font-size: 20px;
+      margin-bottom: 10px;
+      margin-top:10px;
+      
+    }

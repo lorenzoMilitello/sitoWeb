@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="it">
+  <head><!-- inizio Head -->
+    <title>Yōkai no Bijutsukan - 妖怪の美術館</title>
+    <!-- metadata -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Galleria illustrata di creature Yōkai dal folklore giapponese.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Dublin Core Metadata -->
+      <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/> 
+      <meta name="DC.Title" content="Yōkai no Bijutsukan"/> 
+      <meta name="DC.Creator" content="Lorenzo Militello"/> 
+      <meta name="DC.Subject" content="Raccolta di rappresentazioni artistiche sugli Yōkai"/> 
+      <meta name="DC.Description" content="Spiegazione del contenuto della risorsa"/> 
+      <meta name="DC.Publisher" content="GitHub Pages"/> 
+      <meta name="DC.Date" content="29/06/2025"/> 
+      <meta name="DC.Type" content="Catalogo web "/> 
+      <meta name="DC.Format" content="sito web"/> 
+      <meta name="DC.Identifier" content="Riferimento univoco alla risorsa nell’ambito di un dato contesto (URI)"/> 
+      <meta name="DC.Source" content="Collezione di Yokai"/> 
+      <meta name="DC.Language" content="Italiano"/> 
+
+  <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> <!-- icone Bootstrap -->
+  <!-- CSS -->
+    <link rel="stylesheet" href="./css/Progetto.css">
+<!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    
+  </head>
+  <body><!-- inizio Body -->
+
+    <!-- Immagine principale + titolo-->
+
+  <div class="cover text-center text-white d-flex flex-column justify-content-center align-items-center ">
+  <h1 class="fw-bold">Yōkai no Bijutsukan</h1>
+  <h2 class="">妖怪の美術館</h2>
+
+</div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar sticky-top navbar-expand-md"> <!-- con sticky-top la barra rimane fissa nella parte superiore quando l'utente scorre la pagina -->
+      <div class="container">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Yōkai</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Galleria</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="galleriaYokai.html">Galleria Yōkai </a></li>
+              <li><a class="dropdown-item" href="#">Galleria Rappresentazioni Yōkai</a></li>
+            </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Mappa</a></li>
+          </ul>
+          <form class="d-flex" role="search">
+            <i class="bi bi-search mx-lg-2 me-2" style="font-size: 20px;"></i><!-- icona bootstrap -->
+          <input class="form-control me-2" type="search" placeholder="cerca opere, artisti..." />
+          <button class="btn btn-outline-secondary" type="submit">Cerca</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+<!-- Web Project Plan -->
+<div class="container">
+    <ol>
+        <li class="titleWebProjectPlan"><a href="#idea">Idea(Abstract)</a></li>
+        <li class="titleWebProjectPlan"><a href="#brief">Brief</a></li>
+            <ol>
+                <li><a href="#obiettivi">Obiettivi informativi</a></li>
+                <li><a href="#utenza">Utenza</a></li>
+                <li><a href="#accesso">Uso dei media e accesso</a></li>
+                <li><a href="#contenuti">Contenuti e dati</a></li>
+            </ol>
+        <li class="titleWebProjectPlan"><a href="#benchmark">Benchmark</a></li>
+        <li class="titleWebProjectPlan"><a href="#struttura">Struttura</a></li>
+        <ol>
+            <li><a href="#mappaConcettuale">Mappa concettuale</a></li>
+            <li><a href="#schemaDipendenze">Schema dipendenze</a></li>
+            <li><a href="#categorie">Categorie descrittive</a></li>
+        </ol>
+        <li class="titleWebProjectPlan"><a href="#layout">Layout</a></li>
+        <li class="titleWebProjectPlan"><a href="#usabilità">Usabilità</a></li>
+        <li class="titleWebProjectPlan"><a href="#servizi">Servizi</a></li>
+        <li class="titleWebProjectPlan"><a href="#bibliografia">Bibliografia e sitografia</a></li>
+    </ol>
+    <hr><br>
+    <ol>
+      <!-- 1. Abstract -->
+        <li class="titleWebProjectPlan fw-bolder" id="idea">Idea(Abstract)</li>
+          <p>Il progetto consiste nella realizzazione di una collezione digitale dedicata alle rappresentazioni
+             artistiche sugli Yōkai, creature del folklore giapponese. La collezione offrirà la possibilità
+              di esplorare e ricercare singole opere attraverso un database che raccoglie tutti gli Yōkai conosciuti. 
+              Una volta selezionato il singolo item, sarà possibile visualizzarne in dettaglio tutte le informazioni relative,
+               comprese le caratteristiche iconografiche, l’autore, il periodo storico e la tecnica utilizzata.
+          </p>
+      <!-- 2. Brief -->
+        <li class="titleWebProjectPlan fw-bolder" id="brief">Brief</li>
+            <ol>
+                <li id="obiettivi" class="fw-bold">Obiettivi informativi</li>
+                  <p>L’obiettivo principale è quello di documentare e conservare tutte le possibili rappresentazioni sugli Yōkai,
+                    in modo da consentire un’analisi comparativa della loro evoluzione iconografica nel tempo, attraverso epoche, stili e media differenti.</p>
+                <li id="utenza" class="fw-bold">Utenza</li>
+              <!-- da rivedere --><p>Il pubblico di riferimento comprende sia appassionati/studiosi che neofiti, con un approccio didattico e descrittivo.</p>
+                    
+                <li class="fw-bold">Uso dei media e accesso</li>
+           <!-- da rivedere --><p>La risorsa è pensata per essere usufruita sia da fisso che mobile, si basa principalmente su immagini e testo risultando abbastanza leggera e grazie all'utilizzo di Bootstrap e delle sue componenti responsive, l'utente finale non avrà problemi ad usufruire della risorsa da qualsiasi dispositivo </p>
+                <li id="contenuti" class="fw-bold">Contenuti e dati</li>
+                  <p>Utilizzo di immagini estratte direttamente dalle varie collezioni con grande attezione per quanto riguarda le policy riguardanti il copyright</p>
+            </ol>
+            <!-- 3. Benchmark -->
+        <li id="benchmark" class="titleWebProjectPlan fw-bolder">Benchmark</li>
+          <p>Esistono siti enciclopedici riguardanti gli yokai come <a href="yokai.com" target="_blank">yokai.com</a>, ottimo sito per quanto riguarda la categorizzazione dei vari Yōkai ma che fornisce solo
+                informazioni testuali e al massimo un immagine generica per ogni Yōkai. Il focus è differente dal mio progetto, perché nonostante si presenti come una raccolta illustrata l'obiettivo principale è quello di essere un enciclopedia. Questo sito è stato utile per prendere ispirazione per alcune componenti del mio sito, quali ad esempio filtri e mappa, componenti che ho trovato molto buone. In particolare mostra
+                un tipo di filtro che si basa principalmente su una serie di link a schermo che riportano poi ad un singolo raggruppamento per filtro. 
+                Ho trovato invece più conveniente partire da questa base per sviluppare dei filtri che permettono una più ampia liberta all'utilizzatore 
+                e una maggiore facilità di uso nel caso di fruizione mobile, attraverso l'uso di bottoni. 
+                Altro esempio...<!-- trovare altri siti -->
+            </p>
+        <!-- 4. Struttura -->
+        <li id="struttura" class="titleWebProjectPlan fw-bolder">Struttura</li>
+            <!-- diagramma ER o schema -->
+          <ol>
+              <li id="mappaConcettuale" class="fw-bold">Mappa concettuale</li>
+                 <!-- fare una mappa concettuale o schema ER -->
+              <li id="schemaDipendenze" class="fw-bold">Schema dipendenze</li>
+                <!-- fare uno schema delle dipendenze -->
+              <li id="categorie" class="fw-bold">Categorie descrittive</li>
+                <p>Queste sono le possibili categorie descrittive di un singolo item all'interno della collezione:</p>
+                    <ul>
+                        <li> <span class="fw-bold">Titolo:</span> [titolo della rappresentazione]</li>
+                        <li><span class="fw-bold">Autore:</span> [autore/i che hanno realizzato la rappresentazione]</li>
+                        <li> <span class="fw-bold">Descrizione:</span> [descrizione della rappresentazione]</li>
+                        <li><span class="fw-bold">Yōkai rappresentato/i:</span> [nome dello/degli Yōkai]</li>
+                        <li><span class="fw-bold">Data:</span> [quando è stata realizzata]</li>
+                        <li><span class="fw-bold">Tecnica:</span> [quali tecniche sono state utilizzate per realizzarla]</li>
+                        <li><span class="fw-bold">Formato:</span> [misure della grandezza della rappresentazione]</li>
+                        <li><span class="fw-bold">Collezione:</span> [dove è collocata in questo momento la rappresentazione]</li>
+                    </ul>
+            </ol>
+        <!-- 5. Layout -->
+        <!-- <li id="layout" class="titleWebProjectPlan fw-bolder">Layout</li>
+        <ol>
+          <li>
+            <p class="fw-bold">Home wireframe</p>
+          </li>
+          <li>
+            <p class="fw-bold">Galleria wireframe</p>
+            
+               <img class="card-img w-50 h-50" src="/img/wireframes/Galleria.png" alt="">
+          
+            
+          </li>
+          <li class="mt-2">
+            <p class="fw-bold">Item wireframe</p>
+              <img class="card-img w-50 h-50" src="/img/wireframes/Item.png" alt="">
+          </li>
+        </ol> -->
+         <!-- Layout realizzato con Balsamiq + descrizione -->
+
+         <!-- 6. Usabilità -->
+        <li id="usabilità" class="titleWebProjectPlan fw-bolder">Usabilità</li>
+          <p>
+                Per quanto riguarda l'usabilità del sito, ho integrato diverse funzionalità all'interno del layout per rendere l’esperienza utente più fluida e intuitiva.
+                Ad esempio, ho aggiunto i <span class="fw-bold">breadcrumb</span> per indicare chiaramente in quale sezione del sito ci si trovi e per consentire di tornare facilmente alle sezioni precedenti.
+                Ho scelto una <span class="fw-bold">palette di colori coerente</span>, con tonalità vicine come il beige e il marrone, per rendere la navigazione visivamente più leggera e piacevole.
+                Gli elementi della collezione sono suddivisi in gruppi di card completamente cliccabili, facilitando la navigazione da dispositivi mobili.
+                Lo stile del sito rimane coerente in tutte le pagine, evitando di disorientare l’utente,
+                 mentre font e icone sono stati selezionati con attenzione per garantire una lettura semplice e immediata.
+            </p>
+            <!-- 7. Servizi -->
+        <li id="servizi" class="titleWebProjectPlan fw-bolder">Servizi</li>
+          <p>
+                All'interno della mia risorsa dedicata alla collezione di rappresentazioni sugli Yōkai, ho integrato diversi strumenti di browsing per offrire un'esperienza di navigazione più ricca e funzionale.
+                Sono presenti sistemi di <span class="fw-bold">Pagination</span>  e <span class="fw-bold"> parole chiave</span> evidenziate, che permettono di cercare una rappresentazione o un singolo Yokai attraverso molteplici percorsi alternativi rispetto alla semplice navigazione primaria.
+                Per migliorare l’usabilità, ho utilizzato diversi strumenti di interazione come <span class="fw-bold">bottoni</span> e <span class="fw-bold">card interattive</span> facilmente cliccabili anche da mobile.
+                In particolare, i filtri di ricerca sono stati implementati tramite un bottone che si espande usando un <span class="fw-bold">Collapse</span> , rivelando un sottomenu con tutti i criteri disponibili per affinare la selezione della collezione desiderata.
+                Sono inoltre presenti <span class="fw-bold">menu a tendina (dropdown)</span> e effetti visivi sulle immagini, che contribuiscono a rendere l’esperienza di esplorazione più piacevole e coinvolgente per l’utente.
+            </p>
+            <!-- 8. Bibliografia -->
+        <li id="bibliografia" class="titleWebProjectPlan fw-bolder">Bibliografia</li>
+          <p>Web application</p>
+            <ul>
+              <li>Wireframes realizzati con Balsamiq: <a href="https://balsamiq.com/" target="_blank">https://balsamiq.com/</a></li>
+            </ul>
+          <p>Immagini</p>
+            <ul>
+              <li>immagini prese da WikiMediaCommons: <a href="https://commons.wikimedia.org/wiki/Pagina_principale">https://commons.wikimedia.org/wiki/Pagina_principale </a></li>
+            </ul>
+        </ol>
+        <p>Codice:</p>
+        <p>Sezioni HowTo W3School e documentazione del framework CSS Bootstrap</p>
+</div><!-- fine container -->
+    
+
+    <!-- Footer -->
+  <footer class=" py-4">
+      <hr class="my-2">
+   <div class="container">
+      <div class="row"><!-- si crea una riga -->
+  
+      <!-- Contatti -->
+      <div class="col-md-4">
+        <h3>Contatti</h3>
+        <p>
+          Email: <a href="emailInventata@gmail.com">emailInventata@gmail.com</a><br>
+          Telefono: +39 0123 456789<br>
+          Indirizzo: Via Roma 8, 00100 Roma, Italia
+        </p>
+        
+      </div>
+
+      <!-- Link Utili -->
+      <div class="col-md-4">
+        <h3>Link Utili</h3>
+        <ul class="list-unstyled">
+          <li><a href="webProjectPlan.html">Web Project Plan</a></li>
+          <li><a href="#">Chi siamo</a></li>
+        </ul>
+      </div>
+
+      <!-- Legale -->
+      <div class="col-md-4">
+        <h3>Legale</h3>
+        <ul class="list-unstyled">
+          <li><a href="#">Informativa sulla privacy</a></li>
+          <li><a href="#">Termini e condizioni</a></li>
+          <li><a href="#">Accessibilità</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  
+    <hr class="my-4">
+
+    <div class="text-center">
+      <p>
+        &copy; 2025 Yōkai no Bijutsukan – Tutti i diritti riservati.<br>
+        Progetto sviluppato per fini educativi e culturali.
+      </p>
+    </div>
+    </div>
+  </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
