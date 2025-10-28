@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head><!-- inizio Head -->
+      <title>Yōkai no Bijutsukan - 妖怪の美術館</title>
+      <link rel="icon" href="./img/logo/logo1.png" type="image/png">
+    <!-- metadata -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="Galleria illustrata di creature Yōkai dal folklore giapponese.">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Dublin Core Metadata -->
+      <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/> 
+      <meta name="DC.Title" content="Yōkai no Bijutsukan"/> 
+      <meta name="DC.Creator" content="Lorenzo Militello"/> 
+      <meta name="DC.Subject" content="Raccolta di rappresentazioni sugli Yōkai"/> 
+      <meta name="DC.Description" content="Raccolta digitale dedicata alle rappresentazioni artistiche sugli Yokai, creature del folkore giapponese"/> 
+      <meta name="DC.Publisher" content="GitHub Pages"/> 
+      <meta name="DC.Date" content="29/06/2025"/> 
+      <meta name="DC.Type" content="Catalogo web "/> 
+      <meta name="DC.Format" content="sito web"/> 
+      <meta name="DC.Identifier" content="Riferimento univoco alla risorsa nell’ambito di un dato contesto (URI)"/> 
+      <meta name="DC.Source" content="Collezione di rappresentazioni artistiche"/> 
+      <meta name="DC.Language" content="Italiano"/> 
+    <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> <!-- icone Bootstrap -->
+    <!-- CSS -->
+      <link rel="stylesheet" href="./css/yokai.css">
+  <!-- Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- social -->
+      <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=68c801206bd80d4bd2a04da8&product=sop' async='async'></script>
+  </head>
+  <body><!-- inizio Body -->
+    <!-- Immagine principale + titolo-->
+  <div class="cover text-center text-white d-flex flex-column justify-content-center align-items-center ">
+ <a href="index.html"><img class="img-fluid" src="/img/logo/logo1.png" style="height: 300px;" alt="logo"></a>
+  <h1 id="Titolo" class="fw-bold">Yōkai no Bijutsukan </h1>
+     <h2 id="Sottotitolo" >妖怪の美術館</h2>
+</div> 
+    <!-- Navigation Bar -->
+    <nav class="navbar sticky-top navbar-expand-md text-center custom-shadow"> <!-- con sticky-top la barra rimane fissa nella parte superiore quando l'utente scorre la pagina -->
+      <div class="container">
+        <a class="navbar-brand" href="index.html">  <img class="img-fluid img"  src="/img/logo/logo2.png" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li> 
+          <!-- dropdown menu all'interno della navbar -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Yōkai
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="galleriaYokai.html">Tutti</a></li>
+                <li><a class="dropdown-item" href="#"> Benevoli</a></li>
+                <li><a class="dropdown-item" href="#"> Malevoli</a></li>
+                <li><a class="dropdown-item" href="#"> Neutrali</a></li>
+            </ul>
+            <li class="nav-item"><a class="nav-link" href="#">Galleria</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Autori</a></li>
+            <li class="nav-item"><a class="nav-link" href="mappaGiappone.html">Mappa</a></li>
+          </ul>
+          <form class="d-flex ms-auto" role="search">
+            <i class="bi bi-search  me-2" style="font-size: 20px;"></i><!-- icona bootstrap -->
+            <input class="form-control me-2" type="search" placeholder="cerca opere, artisti..." />
+            <button class="btn btn-outline-secondary" type="submit">Cerca</button>
+          </form>
+          <a href="#" class="ms-auto">  <i class="bi bi-person-circle" style="font-size: 40px;"></i></a>
+        </div>
+      </div>
+    </nav>
+
+<div class="container mt-4">
+  
+  <!-- Breadcrumb -->
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="./index.html" style="text-decoration: none;">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Mappa</li>
+  </ol>
+  <div class="bg-light p-4 rounded-3 shadow mb-5">
+    <h2 class="mb-3">Mappa degli Yōkai</h2>
+    <p>
+      Utilizza la mappa del Giappone per esplorare le diverse regioni e scoprire i yōkai associati a ciascuna di esse.
+      Cliccando su una regione accederai all’elenco completo delle creature locali.
+    </p>
+  </div>
+   
+  <!-- Mappa  -->
+  <div class="bg-light text-center mb-5 rounded shadow">
+    <img src="/img/Mappa/japanRegions.png" usemap="#image-map" class="img-fluid " alt="Mappa delle regioni giapponesi">
+    <map name="image-map">
+      <area alt="Hokkaidō" title="Hokkaidō" href="#" coords="667,297,719,270,748,212,842,250,960,178,952,99,770,12,719,21,683,155,617,241,641,257,651,275" shape="poly">
+      <area alt="Tōhoku" title="Tōhoku" href="#" coords="656,585,619,596,614,567,636,549,644,490,641,407,650,351,673,323,719,283,736,285,755,345,781,392,775,450,745,510,719,593,689,606" shape="poly">
+      <area alt="Kantō" title="Kantō" href="#" coords="692,612,702,680,680,712,622,709,588,661,577,626,605,588,627,602,641,591,649,585" shape="poly">
+      <area alt="Chūbu" title="Chūbu" href="#" coords="633,493,565,503,472,569,450,639,423,660,467,718,494,757,604,783,637,742,610,733,604,690,581,663,571,633,634,537" shape="poly">
+      <area alt="Kansai" title="Kansai" href="#" coords="347,681,339,749,415,848,489,770,434,677" shape="poly">
+      <area alt="Chūgoku" title="Chūgoku" href="#" coords="345,683,334,749,336,766,205,818,135,798,143,766,225,718,265,627,289,639,272,669" shape="poly">
+      <area alt="Shikoku" title="Shikoku" href="#" coords="282,849,333,850,369,819,344,767,203,822,253,891" shape="poly">
+      <area alt="Kyūshū" title="Kyūshū" href="#" coords="133,800,191,822,240,933,113,1065,14,896,51,743" shape="poly">
+      <area alt="Okinawa" title="Okinawa" href="#" coords="1193,602,1050,593,649,1009,826,1071,931,1062,1181,919" shape="poly">
+    </map>
+  </div>
+
+<!-- Legenda -->
+  <div class="bg-light regioni p-2 rounded-3 shadow mt-2">
+    <h3 class="mb-3">Legenda</h3>
+    <ul class="bg-white rounded py-2">
+        <li style="color: #FF8686;"><a style="color: #FF8686;"href="#">Hokkaidō</a></li>
+        <li style="color: #FFFB92;"><a style="color: #FFFB92;" href="#">Tōhoku</a></li>
+        <li style="color: #7AFF77;"><a style="color: #7AFF77;"href="#">Kantō</a></li>
+        <li style="color: #8CFFE9"><a style="color: #8CFFE9"href="#">Chūbu</a></li>
+        <li style="color: #7373FF"><a style="color: #7373FF" href="#">Kansai</a></li>
+        <li style="color: #FF923F"><a style="color: #FF923F"href="#">Chūgoku</a></li>
+        <li style="color: #D26EFF"><a style="color: #D26EFF"href="#">Shikoku</a></li>
+        <li style="color: #C6C6C6"><a style="color: #C6C6C6"href="#">Kyūshū</a></li>
+        <li style="color: #C6C6C6"><a style="color: #C6C6C6" href="#">Okinawa</a></li>
+    </ul>
+  </div>
+</div>
+
+ <!-- Footer -->
+  <footer class=" py-4">
+    <hr class="my-2">
+    <div class="container p-1">
+        <div class="row">
+        <!-- Contatti -->
+          <div class="col-md-4">
+            
+            <h3>Contatti</h3>
+          <p>
+              Email: <a href="emailInventata@gmail.com">emailInventata@gmail.com</a><br>
+              Telefono: +39 0123 456789<br>
+              Indirizzo: Via Roma 8, 00100 Roma, Italia
+            </p>
+            <div class="sharethis-inline-follow-buttons"></div>
+          </div>
+        <!-- Link Utili -->
+          <div class="col-md-4">
+            <h3>Link Utili</h3>
+            <ul class="list-unstyled">
+              <li><a href="webProjectPlan.html">Web Project Plan</a></li>
+              <li><a href="#">Chi siamo</a></li>
+            </ul>
+          </div>
+        <!-- Legale -->
+          <div class="col-md-4">
+            <h3>Legale</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Informativa sulla privacy</a></li>
+              <li><a href="#">Termini e condizioni</a></li>
+              <li><a href="#">Accessibilità</a></li>
+            </ul>
+          </div>
+      </div>
+      <!-- Separatore -->
+      <hr class="my-4">
+
+      <!-- Copyright -->
+      <div class="text-center">
+        <p>
+          &copy; 2025 Yōkai no Bijutsukan –  Progetto sviluppato per fini educativi e culturali.<br>
+        </p>
+      </div>
+    </div>
+  </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   
+    <!-- Script per rendere la mappa responsive -->
+<script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+<script src="/js/collezioneYokai.js"></script>
+  </body>
+</html>

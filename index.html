@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head><!-- inizio Head -->
+    <title>Yōkai no Bijutsukan - 妖怪の美術館</title>
+    <link rel="icon" href="./img/logo/logo1.png" type="image/png">
+    <!-- metadata -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="Galleria illustrata di creature Yōkai dal folklore giapponese.">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Dublin Core Metadata -->
+      <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/> 
+      <meta name="DC.Title" content="Yōkai no Bijutsukan"/> 
+      <meta name="DC.Creator" content="Lorenzo Militello"/> 
+      <meta name="DC.Subject" content="Raccolta di rappresentazioni sugli Yōkai"/> 
+      <meta name="DC.Description" content="Raccolta digitale dedicata alle rappresentazioni artistiche sugli Yokai, creature del folkore giapponese"/> 
+      <meta name="DC.Publisher" content="GitHub Pages"/> 
+      <meta name="DC.Date" content="29/06/2025"/> 
+      <meta name="DC.Type" content="Catalogo web "/> 
+      <meta name="DC.Format" content="sito web"/> 
+      <meta name="DC.Identifier" content="Riferimento univoco alla risorsa nell’ambito di un dato contesto (URI)"/> 
+      <meta name="DC.Source" content="Collezione di rappresentazioni artistiche"/> 
+      <meta name="DC.Language" content="Italiano"/> 
+
+    <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> <!-- icone Bootstrap -->
+    <!-- CSS -->
+      <link rel="stylesheet" href="./css/yokai.css">
+
+    <!-- Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- social -->
+      <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=68c801206bd80d4bd2a04da8&product=sop' async='async'></script>
+  </head>
+  <body><!-- inizio Body -->
+    <!-- Immagine principale + titolo-->
+    <div class="cover text-center text-white d-flex flex-column justify-content-center align-items-center ">
+      <a href="index.html"><img class="img-fluid" src="/img/logo/logo1.png" style="height: 300px;" alt="logo"></a>
+      <h1 id="Titolo" class="fw-bold">Yōkai no Bijutsukan </h1>
+      <h2 id="Sottotitolo" >妖怪の美術館</h2>
+    </div> 
+  <!-- Navigation Bar -->
+    <nav class="navbar sticky-top navbar-expand-md text-center custom-shadow"> <!-- con sticky-top la barra rimane fissa nella parte superiore quando l'utente scorre la pagina -->
+      <div class="container">
+        <a class="navbar-brand" href="index.html">  <img class="img-fluid img"  src="/img/logo/logo2.png" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li> 
+          <!-- dropdown menu all'interno della navbar -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Yōkai
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="galleriaYokai.html">Tutti</a></li>
+                <li><a class="dropdown-item" href="#"> Benevoli</a></li>
+                <li><a class="dropdown-item" href="#"> Malevoli</a></li>
+                <li><a class="dropdown-item" href="#"> Neutrali</a></li>
+            </ul>
+            <li class="nav-item"><a class="nav-link" href="#">Galleria</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Autori</a></li>
+            <li class="nav-item"><a class="nav-link" href="mappaGiappone.html">Mappa</a></li>
+          </ul>
+          <form class="d-flex ms-auto" role="search">
+            <i class="bi bi-search  me-2" style="font-size: 20px;"></i><!-- icona bootstrap -->
+            <input class="form-control me-2" type="search" placeholder="cerca opere, artisti..." />
+            <button class="btn btn-outline-secondary" type="submit">Cerca</button>
+          </form>
+          <a href="#" class="ms-auto">  <i class="bi bi-person-circle" style="font-size: 40px;"></i></a>
+        </div>
+      </div>
+    </nav>
+<!-- Main Content -->
+
+<h2 class="p-3 m-3 text-center">Benvenuto nel mondo degli Yōkai</h2>
+<div class="container contentMain">
+        <p class="fst-italic fs-5 p-4 py-5 bg-light rounded shadow text-center">
+        “<strong>Yōkai no Bijutsukan</strong> è una collezione digitale dedicata alla rappresentazione artistica sugli Yōkai,
+        le creature misteriose del folklore giapponese. Il sito raccoglie immagini, opere, in generale qualsiasi tipo di rappresentazione,
+        offrendo uno sguardo unico sull’evoluzione culturale e visiva di questi esseri straordinari.”
+        </p>
+        <div class="row g-5 my-5 bg-light p-3 rounded m-1 shadow">
+        <!-- Galleria Yōkai -->
+          <div class="col-md-6">
+            <div class="position-relative overflow-hidden rounded shadow-sm hover-zoom">
+              <img src="./img/index/home1.png" class="img-fluid w-100 h-100 object-fit-cover rounded border-1 shadow" alt="Vai alla Galleria Yōkai" style="aspect-ratio: 3/4;">
+              <div class="overlay d-flex flex-column justify-content-center align-items-center text-white text-center px-3">
+                <h4>Se vuoi ricercare partendo da uno Yokai specifico </h4>
+                <a href="GalleriaYokai.html" class="btn btn-outline-light btn mx-3">Clicca qua per andare all'elenco degli Yōkai</a>
+              </div>
+            </div>
+          </div>
+      <!-- Galleria Rappresentazioni -->
+        <div class="col-md-6">
+          <div class="position-relative overflow-hidden rounded shadow-sm hover-zoom ">
+            <img src="./img/index/home2.jpg" class="img-fluid w-100 h-100 object-fit-cover rounded shadow" alt="Vai alla Galleria delle Rappresentazioni" style="aspect-ratio: 3/4;">
+            <div class="overlay d-flex flex-column justify-content-center align-items-center text-white text-center px-3">
+            <h4>Se vuoi direttamente accedere alla galleria delle rappresentazioni</h4>
+              <a href="Galleria.html" class="btn btn-outline-light mx-3">Clicca qua per andare alla galleria delle rappresentazione </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <div class="row g-5 my-5 bg-light p-3 rounded m-1 shadow">
+    <!-- carosello -->
+    <div class="col-md-6">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner ">
+          <div class="carousel-item active">
+            <img src="/img/Carousel/carousel3.jpg" class="d-block rounded " width="500px" alt="yokai carosello">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/Carousel/carousel2.jpg" class="d-block rounded" width="500px" alt="yokai carosello">
+          </div>
+          <div class="carousel-item">
+            <img src="/img/Carousel/carousel1.png" class="d-block rounded " width="500px" alt="yokai carosello">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="col-md-5">
+      <h2 class="text-center mb-4">Cosa sono gli Yōkai?</h2>
+      <blockquote>
+      <p class="fst-italic fs-5 p-4 py-5 bg-light rounded shadow text-center">  <q>
+          Gli yōkai (妖怪), da yō ("maleficio, stregoneria") e da kai ("manifestazione inquietante"),
+          nome talvolta traslitterato come youkai o yokai e traducibile come "apparizioni", "spettri"
+          o "demoni", sono un tipo di creatura soprannaturale della mitologia giapponese. <br><br> Le caratteristiche
+          degli yōkai variano tra quelli che vengono considerati malevoli e maliziosi, oltre che portatori
+          di sfortuna per coloro che li incontrano, a quelli che vengono considerati benevoli e portatori di fortuna.</q>
+      <cite><br><a style="font-size: small;"  href="https://it.wikipedia.org/wiki/Y%C5%8Dkai">Fonte: Wikipedia</a></cite>
+    </blockquote></p>
+    </div>
+  </div>
+
+  <!-- Mappa -->
+  <div class="row g-5 my-5 bg-light p-3 rounded m-1 shadow">
+    <div class="col-lg-5">
+      <h2 class="mb-3 text-center">Mappa degli Yōkai</h2>
+      <p class="shadow p-3 rounded">Esplora la distribuzione geografica delle creature del folklore giapponese attraverso la Mappa degli Yōkai.
+          Ogni regione del Giappone è associata a specifiche figure mitologiche, tramandate dalla tradizione popolare e 
+          rappresentate in numerose opere artistiche.
+          Cliccando sul pulsante sottostante, è possibile accedere alla mappa interattiva e consultare
+            le informazioni relative agli Yōkai tipici di ciascuna area del Paese.</p>
+      <div class="text-center">
+        <a href="/mappaGiappone.html" class="btn btn btn-outline-success mt-3 align-items-center p-3">
+        Accedi alla Mappa degli Yōkai
+      </a>
+      </div>
+    </div>
+    <div class="col-lg-7"><img class="img-fluid" src="/img/Mappa/japanRegions.png" alt="mappa giappone regioni"></div>
+  </div>
+  <!-- In evidenza -->
+  <div class="container my-5 bg-body-tertiary p-5 shadow small rounded">
+    <h2 class="text-center mb-4">I più popolari</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+  <!-- Card 1 -->
+    <div class="col">
+        <a href="galleriaKappa.html" class="text-decoration-none">
+        <div class="card yokai-card text-center">
+          <img src="./img/Kappa/kappaUtagawaKuniyoshi.jpg" class="card-img" alt="Kappa - 河童">
+          <div class="card-overlay">
+            <h5 class="card-titleYokai">Kappa - 河童</h5>
+          </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- Card 2 -->
+    <div class="col">
+      <a href="galleriaKappa.html" class="text-decoration-none">
+      <div class="card yokai-card text-center">
+        <img src="./img/yokai/yokaiUshiOni.jpg" class="card-img" alt="Ushi-Oni">
+        <div class="card-overlay">
+          <h5 class="card-titleYokai">Ushi-Oni - 牛鬼</h5>
+        </div>
+      </div>
+    </a>
+  </div>
+  <!-- Card 3 -->
+    <div class="col">
+      <a href="galleriaKappa.html" class="text-decoration-none">
+        <div class="card yokai-card text-center">
+          <img src="./img/yokai/yokaiTengu.jpg" class="card-img" alt="Tengu">
+          <div class="card-overlay">
+            <h5 class="card-titleYokai"> Kawa Tengu - 川天狗</h5>
+          </div>
+        </div>
+      </a>
+    </div>  
+  </div>
+  </div>
+
+  <!-- Newsletter -->
+  <div class="container my-5 text-center bg-light p-5 rounded-3 shadow">
+    <h4><span class="bi bi-envelope" style="font-size: 40px;"></span><br>Iscriviti alla newsletter per ricevere aggiornamenti</h4>
+      <form class="row justify-content-center mt-5">
+        <div class="col-md-6">
+          <input type="email" class="form-control mb-3" placeholder="Inserisci la tua email...">
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-dark">Iscriviti</button>
+        </div>
+      </form>
+  </div>
+</div><!-- fine container -->
+
+<!-- Footer -->
+<footer class=" py-4">
+  <hr class="my-2">
+   <div class="container">
+      <div class="row"><!-- si crea una riga -->
+      <!-- Contatti -->
+        <div class="col-md-4">
+          <h3>Contatti</h3>
+          <p>
+            Email: <a href="emailInventata@gmail.com">emailInventata@gmail.com</a><br>
+            Telefono: +39 0123 456789<br>
+            Indirizzo: Via Roma 8, 00100 Roma, Italia
+          </p>
+          <div class="sharethis-inline-follow-buttons"></div>
+        </div>
+      <!-- Link Utili -->
+        <div class="col-md-4">
+          <h3>Link Utili</h3>
+          <ul class="list-unstyled">
+            <li><a href="webProjectPlan.html">Web Project Plan</a></li>
+            <li><a href="#">Chi siamo</a></li>
+          </ul>
+        </div>
+      <!-- Legale -->
+        <div class="col-md-4">
+          <h3>Legale</h3>
+          <ul class="list-unstyled">
+            <li><a href="#">Informativa sulla privacy</a></li>
+            <li><a href="#">Termini e condizioni</a></li>
+            <li><a href="#">Accessibilità</a></li>
+          </ul>
+        </div>
+    </div>
+    <hr class="my-4">
+    <div class="text-center">
+      <p>
+        &copy; 2025 Yōkai no Bijutsukan –  Progetto sviluppato per fini educativi e culturali.<br>
+       
+      </p>
+    </div>
+    </div>
+</footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

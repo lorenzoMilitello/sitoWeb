@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head><!-- inizio Head -->
+      <title>Yōkai no Bijutsukan - 妖怪の美術館</title>
+      <link rel="icon" href="./img/logo/logo1.png" type="image/png">
+      <!-- metadata -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="Galleria illustrata di creature Yōkai dal folklore giapponese.">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Dublin Core Metadata -->
+        <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/> 
+        <meta name="DC.Title" content="Yōkai no Bijutsukan"/> 
+        <meta name="DC.Creator" content="Lorenzo Militello"/> 
+        <meta name="DC.Subject" content="Raccolta di rappresentazioni sugli Yōkai"/> 
+        <meta name="DC.Description" content="Raccolta digitale dedicata alle rappresentazioni artistiche sugli Yokai, creature del folkore giapponese"/> 
+        <meta name="DC.Publisher" content="GitHub Pages"/> 
+        <meta name="DC.Date" content="29/06/2025"/> 
+        <meta name="DC.Type" content="Catalogo web "/> 
+        <meta name="DC.Format" content="sito web"/> 
+        <meta name="DC.Identifier" content="Riferimento univoco alla risorsa nell’ambito di un dato contesto (URI)"/> 
+        <meta name="DC.Source" content="Collezione di rappresentazioni artistiche"/> 
+        <meta name="DC.Language" content="Italiano"/> 
+    <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> <!-- icone Bootstrap -->
+    <!-- CSS -->
+      <link rel="stylesheet" href="./css/yokai.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- social -->
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=68c801206bd80d4bd2a04da8&product=sop' async='async'></script>
+  </head>
+  <body>
+
+  <!-- Immagine principale + titolo-->
+    <div class="cover text-center text-white d-flex flex-column justify-content-center align-items-center ">
+        <a href="index.html"><img class="img-fluid" src="/img/logo/logo1.png" style="height: 300px;" alt="logo"></a>
+        <h1 id="Titolo" class="fw-bold">Yōkai no Bijutsukan </h1>
+        <h2 id="Sottotitolo" >妖怪の美術館</h2>
+    </div> 
+  <!-- Navigation Bar -->
+      <nav class="navbar sticky-top navbar-expand-md text-center custom-shadow"> <!-- con sticky-top la barra rimane fissa nella parte superiore quando l'utente scorre la pagina -->
+        <div class="container">
+          <a class="navbar-brand" href="index.html">  <img class="img-fluid img"  src="/img/logo/logo2.png" ></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li> 
+            <!-- dropdown menu all'interno della navbar -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Yōkai
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="galleriaYokai.html">Tutti</a></li>
+                  <li><a class="dropdown-item" href="#"> Benevoli</a></li>
+                  <li><a class="dropdown-item" href="#"> Malevoli</a></li>
+                  <li><a class="dropdown-item" href="#"> Neutrali</a></li>
+              </ul>
+              <li class="nav-item"><a class="nav-link" href="#">Galleria</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Autori</a></li>
+              <li class="nav-item"><a class="nav-link" href="mappaGiappone.html">Mappa</a></li>
+            </ul>
+            <form class="d-flex ms-auto" role="search">
+              <i class="bi bi-search  me-2" style="font-size: 20px;"></i><!-- icona bootstrap -->
+              <input class="form-control me-2" type="search" placeholder="cerca opere, artisti..." />
+              <button class="btn btn-outline-secondary" type="submit">Cerca</button>
+            </form>
+            <a href="#" class="ms-auto">  <i class="bi bi-person-circle" style="font-size: 40px;"></i></a>
+          </div>
+        </div>
+      </nav>
+
+  <div class="container">
+  <!-- Breadcrumb con Bootstrap-->
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="./index.html" style="text-decoration: none;">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Yōkai</li>
+    </ol>     
+  <!-- Filtri -->
+
+    <!-- Bottone per aprire/chiudere il pannello Filtri -->
+    <button class="btn btn-secondary mt-3 ms-4" type="button" data-bs-toggle="collapse" data-bs-target="#Filtri" aria-expanded="false" aria-controls="Filtri">Filtri</button>
+    <!-- Contenitore Filtri -->
+      <div class="collapse mt-3" id="Filtri">
+      <div id="filtro" class="card card-body m-3">
+        <h4 class="mb-3">Filtri di ricerca</h4>
+        <div class="accordion" id="accordionFiltri">
+          <!-- Ordine Alfabetico -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOrdine">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOrdine" aria-expanded="false" aria-controls="collapseOrdine">
+                Ordine Alfabetico
+              </button>
+            </h2>
+            <div id="collapseOrdine" class="accordion-collapse collapse" aria-labelledby="headingOrdine" data-bs-parent="#accordionFiltri">
+              <div class="accordion-body">
+                <div class="d-flex flex-wrap gap-2">
+                  <button class="btn btn-outline-primary">Crescente A → Z</button>
+                  <button class="btn btn-outline-primary">Decrescente Z → A</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Categorie di Yōkai -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingCategorie">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCategorie" aria-expanded="false" aria-controls="collapseCategorie">
+                Categorie di Yōkai
+              </button>
+            </h2>
+            <div id="collapseCategorie" class="accordion-collapse collapse" aria-labelledby="headingCategorie" data-bs-parent="#accordionFiltri">
+              <div class="accordion-body">
+                <div class="d-flex flex-wrap gap-2">
+                  <button class="btn btn-outline-success">Yōkai animali</button>
+                  <button class="btn btn-outline-success">Yōkai bambini</button>
+                  <button class="btn btn-outline-success">Chimere</button>
+                  <button class="btn btn-outline-success">Draghi</button>
+                  <button class="btn btn-outline-success">Fantasmi</button>
+                  <button class="btn btn-outline-success">Dei</button>
+                  <button class="btn btn-outline-success">Kappa</button>
+                  <button class="btn btn-outline-success">Kitsune</button>
+                  <button class="btn btn-outline-success">Persone leggendarie</button>
+                  <button class="btn btn-outline-success">Oni</button>
+                  <button class="btn btn-outline-success">Tanuki</button>
+                  <button class="btn btn-outline-success">Sirene</button>
+                  <button class="btn btn-outline-success">Fenomeni</button>
+                  <button class="btn btn-outline-success">Sacerdoti Yōkai</button>
+                  <button class="btn btn-outline-success">Bestie sacre</button>
+                  <button class="btn btn-outline-success">Yōkai mutaforma</button>
+                  <button class="btn btn-outline-success">Tengu</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tipologia -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTipologia">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTipologia" aria-expanded="false" aria-controls="collapseTipologia">
+                Tipologia
+              </button>
+            </h2>
+            <div id="collapseTipologia" class="accordion-collapse collapse" aria-labelledby="headingTipologia" data-bs-parent="#accordionFiltri">
+              <div class="accordion-body">
+                <div class="d-flex flex-wrap gap-2">
+                  <button class="btn btn-outline-warning">Benevolo</button>
+                  <button class="btn btn-outline-warning">Neutrale</button>
+                  <button class="btn btn-outline-warning">Malevolo</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Contesto Religioso -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingReligione">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReligione" aria-expanded="false" aria-controls="collapseReligione">
+                Contesto Religioso
+              </button>
+            </h2>
+            <div id="collapseReligione" class="accordion-collapse collapse" aria-labelledby="headingReligione" data-bs-parent="#accordionFiltri">
+              <div class="accordion-body">
+                <div class="d-flex flex-wrap gap-2">
+                  <button class="btn btn-outline-info">Buddhismo</button>
+                  <button class="btn btn-outline-info">Taoismo</button>
+                  <button class="btn btn-outline-info">Religione Ainu</button>
+                  <button class="btn btn-outline-info">Koshin</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Ricerca per Nome -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingNome">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNome" aria-expanded="false" aria-controls="collapseNome">
+                Ricerca per Nome
+              </button>
+            </h2>
+            <div id="collapseNome" class="accordion-collapse collapse" aria-labelledby="headingNome" data-bs-parent="#accordionFiltri">
+              <div class="accordion-body">
+                <input class="form-control" type="search" placeholder="Inserisci il nome dello yōkai..." />
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4">
+        <button type="button" class="btn btn-outline-danger">Applica Filtri</button>
+      </div>
+    </div>
+  </div>
+  <!-- Collezione -->
+  <div class="container my-5 bg-body-tertiary p-5 shadow rounded">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+    <!-- Row1 -->
+
+      <!-- Card 1 -->
+        <div class="col">
+          <a href="galleriaKappa.html" class="text-decoration-none">
+          <div class="card yokai-card text-center">
+            <img src="./img/Kappa/kappaUtagawaKuniyoshi.jpg" class="card-img" alt="Kappa - 河童">
+            <div class="card-overlay">
+              <h5 class="card-titleYokai">Kappa - 河童</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+    <!-- Card 2 -->
+      <div class="col">
+        <a href="galleriaKappa.html" class="text-decoration-none">
+          <div class="card yokai-card text-center">
+            <img src="./img/yokai/yokaiYukiOnna.jpg" class="card-img"alt="Yuki-onna">
+            <div class="card-overlay">
+              <h5 class="card-titleYokai">Yuki-onna - 雪女</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+
+        
+    <!-- Card 3-->
+      <div class="col">
+        <a href="galleriaKappa.html" class="text-decoration-none">
+          <div class="card yokai-card text-center">
+              <img src="./img/yokai/yokaiUshiOni.jpg" class="card-img" alt="Ushi-Oni">
+            <div class="card-overlay">
+            <h5 class="card-titleYokai">Ushi-Oni - 牛鬼</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    <!-- Row2 -->  
+        
+    <!-- Card 4 -->
+      <div class="col">
+        <a href="galleriaKappa.html" class="text-decoration-none">
+          <div class="card yokai-card text-center">
+                <img src="./img/yokai/yokaiHitotsumeKozo.jpg" class="card-img " alt="Hitotsume kozō">
+            <div class="card-overlay">
+              <h5 class="card-titleYokai">Hitotsume kozō - 一つ目小僧 </h5>
+            </div>
+          </div>
+        </a>
+    </div>
+      
+    <!-- Card 5 -->
+      <div class="col">
+        <a href="galleriaKappa.html" class="text-decoration-none">
+          <div class="card yokai-card text-center">
+                <img src="./img/yokai/yokaiItsuki.jpg" class="card-img" alt="Itsuki">
+            <div class="card-overlay">
+            <h5 class="card-titleYokai">Itsuki - 縊鬼</h5>
+            </div>
+          </div>
+        </a>
+    </div>
+
+    <!-- Card 6 -->
+      <div class="col">
+        <a href="galleriaKappa.html" class="text-decoration-none">
+          <div class="card yokai-card text-center">
+              <img src="./img/yokai/yokaiKasane.jpg" class="card-img " alt="Kasane">
+            <div class="card-overlay">
+              <h5 class="card-titleYokai">Kasane - 累</h5>
+            </div>
+          </div>
+        </a>
+    </div>
+
+    <!-- Row 3 -->
+
+    <!-- Card 7 -->
+      <div class="col">
+        <a href="galleriaKappa.html" class="text-decoration-none">
+        <div class="card yokai-card text-center">
+        <img src="./img/yokai/yokaiSuikaNoBakemono.jpg" class="card-img " alt="Suika-no-bakemono">
+          <div class="card-overlay">
+            <h5 class="card-titleYokai">Suika no Bakemono - 西瓜の化物 </h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Card 8 -->
+      <div class="col">
+        <a href="galleriaKappa.html" class="text-decoration-none">
+          <div class="card yokai-card text-center">
+              <img src="./img/yokai/yokaiAkuru.jpg" class="card-img " alt="Akaru">
+            <div class="card-overlay">
+              <h5 class="card-titleYokai">Akaru - 悪樓</h5>
+            </div>
+          </div>
+        </a>
+    </div>
+      <!-- Card 9 --> 
+        <div class="col">
+          <a href="galleriaKappa.html" class="text-decoration-none">
+            <div class="card yokai-card text-center">
+                <img src="./img/yokai/yokaiTengu.jpg" class="card-img" alt="Tengu">
+              <div class="card-overlay">
+              <h5 class="card-titleYokai"> Kawa Tengu - 川天狗</h5>
+              </div>
+            </div>
+          </a>
+      </div>        
+    </div>
+  </div>
+    
+    
+
+  <!-- Pagination -->
+  <nav>
+    <ul class="pagination justify-content-center light">
+      <li class="page-item disabled"><a class="page-link" href="#">Precedente</a></li>
+      <li class="page-item active "><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Successiva</a></li>
+    </ul>
+  </nav>
+
+    
+  <!-- Footer -->
+  <footer class=" py-4">
+    <hr class="my-2">
+    <div class="container p-1">
+        <div class="row">
+        <!-- Contatti -->
+          <div class="col-md-4">
+            
+            <h3>Contatti</h3>
+          <p>
+              Email: <a href="emailInventata@gmail.com">emailInventata@gmail.com</a><br>
+              Telefono: +39 0123 456789<br>
+              Indirizzo: Via Roma 8, 00100 Roma, Italia
+            </p>
+            <div class="sharethis-inline-follow-buttons"></div>
+          </div>
+        <!-- Link Utili -->
+          <div class="col-md-4">
+            <h3>Link Utili</h3>
+            <ul class="list-unstyled">
+              <li><a href="webProjectPlan.html">Web Project Plan</a></li>
+              <li><a href="#">Chi siamo</a></li>
+            </ul>
+          </div>
+        <!-- Legale -->
+          <div class="col-md-4">
+            <h3>Legale</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Informativa sulla privacy</a></li>
+              <li><a href="#">Termini e condizioni</a></li>
+              <li><a href="#">Accessibilità</a></li>
+            </ul>
+          </div>
+      </div>
+      <!-- Separatore -->
+      <hr class="my-4">
+
+      <!-- Copyright -->
+      <div class="text-center">
+        <p>
+          &copy; 2025 Yōkai no Bijutsukan –  Progetto sviluppato per fini educativi e culturali.<br>
+        </p>
+      </div>
+    </div>
+  </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
