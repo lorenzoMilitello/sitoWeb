@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head><!-- inizio Head -->
+        <title>Yōkai no Bijutsukan - 妖怪の美術館</title>
+        <link rel="icon" href="./img/logo/logo1.png" type="image/png">
+      <!-- metadata -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="Galleria illustrata di creature Yōkai dal folklore giapponese.">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Dublin Core Metadata -->
+      <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"/> 
+      <meta name="DC.Title" content="Yōkai no Bijutsukan"/> 
+      <meta name="DC.Creator" content="Lorenzo Militello"/> 
+      <meta name="DC.Subject" content="Raccolta di rappresentazioni sugli Yōkai"/> 
+      <meta name="DC.Description" content="Raccolta digitale dedicata alle rappresentazioni artistiche sugli Yokai, creature del folkore giapponese"/> 
+      <meta name="DC.Publisher" content="GitHub Pages"/> 
+      <meta name="DC.Date" content="29/06/2025"/> 
+      <meta name="DC.Type" content="Catalogo web "/> 
+      <meta name="DC.Format" content="sito web"/> 
+      <meta name="DC.Identifier" content="Riferimento univoco alla risorsa nell’ambito di un dato contesto (URI)"/> 
+      <meta name="DC.Source" content="Collezione di rappresentazioni artistiche"/> 
+      <meta name="DC.Language" content="Italiano"/> 
+    <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> <!-- icone Bootstrap -->
+    <!-- CSS -->
+      <link rel="stylesheet" href="./css/yokai.css">
+  <!-- Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ <!-- social -->
+   <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=68c801206bd80d4bd2a04da8&product=sop' async='async'></script>
+  </head>
+  <body><!-- inizio Body -->
+
+  <!-- Immagine principale + titolo-->
+  <div class="cover text-center text-white d-flex flex-column justify-content-center align-items-center ">
+    <a href="index.html"><img class="img-fluid" src="./img/logo/logo1.png" style="height: 300px;" alt="logo"></a>
+    <h1 id="Titolo" class="fw-bold">Yōkai no Bijutsukan </h1>
+    <h2 id="Sottotitolo" >妖怪の美術館</h2>
+  </div>
+
+  <!-- Navigation Bar -->
+    <nav class="navbar sticky-top navbar-expand-md text-center custom-shadow"> <!-- con sticky-top la barra rimane fissa nella parte superiore quando l'utente scorre la pagina -->
+      <div class="container">
+        <a class="navbar-brand" href="index.html">  <img class="img-fluid img"  src="./img/logo/logo2.png" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li> 
+          <!-- dropdown menu all'interno della navbar -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Yōkai
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="galleriaYokai.html">Tutti</a></li>
+                <li><a class="dropdown-item" href="#"> Benevoli</a></li>
+                <li><a class="dropdown-item" href="#"> Malevoli</a></li>
+                <li><a class="dropdown-item" href="#"> Neutrali</a></li>
+            </ul>
+            <li class="nav-item"><a class="nav-link" href="#">Galleria</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Autori</a></li>
+            <li class="nav-item"><a class="nav-link" href="mappaGiappone.html">Mappa</a></li>
+          </ul>
+          <form class="d-flex ms-auto" role="search">
+            <i class="bi bi-search  me-2" style="font-size: 20px;"></i><!-- icona bootstrap -->
+            <input class="form-control me-2" type="search" placeholder="cerca opere, artisti..." />
+            <button class="btn btn-outline-secondary" type="submit">Cerca</button>
+          </form>
+          <a href="#" class="ms-auto">  <i class="bi bi-person-circle" style="font-size: 40px;"></i></a>
+        </div>
+      </div>
+    </nav>
+<!-- Web Project Plan -->
+ <!-- lista -->
+<div class="container mt-5">
+  <ol>
+    <li class="titleWebProjectPlan"><a href="#idea">Idea(Abstract)</a></li>
+    <li class="titleWebProjectPlan"><a href="#brief">Brief</a></li>
+      <ol>
+        <li><a href="#obiettivi">Obiettivi informativi</a></li>
+        <li><a href="#utenza">Utenza</a></li>
+        <li><a href="#accesso">Uso dei media e accesso</a></li>
+        <li><a href="#contenuti">Contenuti e dati</a></li>
+      </ol>
+    <li class="titleWebProjectPlan"><a href="#benchmark">Benchmark</a></li>
+    <li class="titleWebProjectPlan"><a href="#struttura">Struttura</a></li>
+      <ol>
+        <li><a href="#mappaConcettuale">Mappa concettuale</a></li>
+          <li><a href="#schemaDipendenze">Schema dipendenze</a></li>
+          <li><a href="#categorie">Categorie descrittive</a></li>
+      </ol>
+    <li class="titleWebProjectPlan"><a href="#layout">Layout</a></li>
+      <ol>
+        <li><a href="#wireframeHome">Wireframe Home</a></li>
+        <li><a href="#wireframeGalleria">Wireframe Galleria</a></li>
+        <li><a href="#wireframeItem">Wireframe Item</a></li>
+      </ol>
+    <li class="titleWebProjectPlan"><a href="#usabilità">Usabilità</a></li>
+    <li class="titleWebProjectPlan"><a href="#servizi">Servizi</a></li>
+    <li class="titleWebProjectPlan"><a href="#bibliografia">Bibliografia e sitografia</a></li>
+  </ol>
+
+    <hr><br>
+    <ol>
+      <!-- 1. Abstract -->
+        <li class="titleWebProjectPlan fw-bolder" id="idea">Idea(Abstract)</li>
+          <p>Il progetto consiste nella realizzazione di una collezione digitale dedicata alle rappresentazioni
+             artistiche sugli Yōkai, creature del folklore giapponese. La collezione offrirà la possibilità
+              di esplorare e ricercare singole opere attraverso un database che raccoglie tutti gli Yōkai conosciuti. 
+              Una volta selezionato il singolo item, sarà possibile visualizzarne in dettaglio tutte le informazioni relative,
+               comprese le caratteristiche iconografiche, l’autore, il periodo storico e la tecnica utilizzata.
+          </p>
+
+      <!-- 2. Brief -->
+        <li class="titleWebProjectPlan fw-bolder" id="brief">Brief</li>
+            <ol>
+              <!-- obiettivi informativi -->
+                <li id="obiettivi" class="fw-bold">Obiettivi informativi</li>
+                  <p>L’obiettivo principale è quello di documentare e conservare tutte le possibili rappresentazioni sugli Yōkai,
+                    in modo da consentire un’analisi comparativa della loro evoluzione iconografica nel tempo, attraverso epoche,
+                     stili e media differenti.</p>
+              <!-- Utenza -->
+                <li id="utenza" class="fw-bold">Utenza</li>
+                  <p>Il pubblico di riferimento comprende sia chi desidera scoprire e approfondire l’evoluzione delle rappresentazioni
+                     degli yokai nel tempo, sia studiosi e ricercatori che possono così trovare uno strumento utile per le loro indagini.
+                      In generale il pubblico di riferimento è formato da coloro che hanno un interesse relativo alla cultura nipponica.</p>
+              <!-- Uso dei media e accesso  -->
+                <li id="accesso" class="fw-bold">Uso dei media e accesso</li>
+                  <p>La risorsa utilizza principalmente testo e immagini, elementi facilmente fruibili anche da dispositivi con prestazioni limitate. 
+                     L’accesso è pensato in ottica multipiattaforma: grazie all’impiego di Bootstrap e delle sue componenti responsive,
+                      il sito garantisce una navigazione ottimale sia da computer fisso che da dispositivi mobile, adattandosi alle diverse
+                       esigenze del pubblico.</p>
+               <!-- Contenuti e dati -->
+                  <li id="contenuti" class="fw-bold">Contenuti e dati</li>
+                  <p>Utilizzo di immagini prese principalmente da WikiCommons, rispettando tutte le normative inerenti al diritto d'autore.</p>
+            </ol>
+
+      <!-- 3. Benchmark -->
+        <li id="benchmark" class="titleWebProjectPlan fw-bolder">Benchmark</li>
+        <p>Esistono diverse risorse online dedicate agli Yōkai, ma la maggior parte di esse si concentra su un approccio descrittivo piuttosto che visivo: 
+          <ul>
+            <li>
+            Una delle principali piattaforme esistenti in questo ambito è quella sviluppata dal <a href="https://www.nichibun.ac.jp/YoukaiGazou/"> International Research Center for Japanese Studies (Nichibunken)</a>
+            di Kyoto, che ospita il Database of Paintings of Mysterious Phenomena and Yōkai (Ghosts, Monsters, Spirits).
+            Si tratta di un archivio digitale che raccoglie numerose rappresentazioni visive di Yōkai,
+            corredate da informazioni come titolo, autore, contesto di realizzazione, istituzione
+            di conservazione e caratteristiche iconografiche. <br>
+
+            Il database offre due modalità di consultazione principali, 
+            “Search by Features” e “Search by Name” 
+            che consentono di filtrare i risultati.
+            Tuttavia, nonostante la grande quantità di dati, il sito presenta alcuni limiti evidenti
+            per l’utenza non specialistica:
+            l’interfaccia è datata e fortemente accademica, con un’impostazione più orientata alla ricerca
+            universitaria che alla fruizione divulgativa.
+              <br>
+              Inoltre, la piattaforma è disponibile esclusivamente in lingua giapponese,
+              rendendo difficile l’accesso e la comprensione dei contenuti per un pubblico internazionale. 
+              Anche dal punto di vista dell’esperienza visiva, il database non è pensato come una galleria
+              artistica immersiva, ma come un repertorio di schede descrittive.
+              L’assenza di un design responsive e l’ottimizzazione minima per dispositivi mobili limitano
+              ulteriormente la sua accessibilità e l’impatto estetico dell’esperienza utente.
+            </li>
+          <br>
+            <li>
+            Un altro esempio significativo è <a href="yokai.com">yokai.com</a>, un portale
+            enciclopedico che raccoglie centinaia di voci dedicate alle creature del folklore giapponese. <br>
+            Il sito si distingue per la ricchezza dei contenuti testuali, ma ogni Yōkai è accompagnato
+            da una sola immagine rappresentativa, senza particolare attenzione alla varietà artistica
+            o all’evoluzione delle sue raffigurazioni nel tempo. L’impostazione generale è quella di
+            un archivio informativo, più vicino ad una enciclopedia che a una galleria visiva.
+          <br>Il mio progetto, al contrario, pone al centro la rappresentazione artistica,
+            valorizzando le differenze stilistiche, temporali e culturali delle opere.
+            <br>Nonostante non sia una collezione di rappresentazioni artistiche, ho trovato alcuni elementi del sito 
+            utili come riferimento per lo sviluppo del mio progetto.
+            In particolare, la struttura delle categorie presenti nella sezione dei filtri
+            ha offerto uno spunto per l’organizzazione dei criteri di ricerca all’interno del mio sito,
+            entre la mappa interattiva che collega le regioni del Giappone agli Yōkai associati
+            a ciascuna di esse è stata una fonte d’ispirazione per la mia implementazione della sezione
+            “Mappa”, dove l’utente può selezionare un’area geografica per visualizzare l’elenco degli 
+            Yōkai corrispondenti
+          </li>
+        </ul>
+      </p>
+
+      <!-- 4. Struttura -->
+        <li id="struttura" class="titleWebProjectPlan fw-bolder">Struttura</li>
+          <ol>
+            <!-- 4.1 Mappa concettuale -->
+              <li id="mappaConcettuale" class="fw-bold mb-3">Mappa concettuale</li>
+                <img class="img-fluid" src="./img/schemiWebProjectPlan/mappaConcettuale.png" alt="mappa concettuale idea">
+                <p class="mt-4">La mappa concettuale ha lo scopo di rappresentare in forma grafica l’idea alla base del sito,
+                                evidenziando gli elementi principali e le relazioni che li collegano all’interno del contesto generale del progetto.
+                                L’elemento centrale è costituito dagli Yōkai, cuore tematico dell’intera collezione digitale, 
+                                da cui si diramano diversi concetti che ne approfondiscono gli aspetti culturali e artistici.
+                                Attraverso la costruzione di questa mappa è stato possibile individuare un secondo nodo fondamentale,
+                                 quello delle rappresentazioni artistiche, che insieme agli Yōkai definisce la struttura portante e l’obiettivo
+                                  del progetto: documentare e valorizzare le diverse modalità con cui queste creature sono state raffigurate nel tempo.
+                </p>
+           <!-- 4.2 Modello E/R -->
+              <li id="modelloER" class="fw-bold mt-3">Modello E/R</li>
+                <img class="img-fluid" src="./img/schemiWebProjectPlan/modelloERYokai.png" alt="Modello E/R">
+                <p class="mt-4">Questo diagramma ER rappresenta la struttura logica del sito, evidenziando come le due gallerie,
+                   quella dedicata alle rappresentazioni artistiche e quella relativa ai singoli Yōkai, costituiscano il fulcro dell’intero progetto.
+                  Nel diagramma sono stati delineati i principali elementi che compongono l’architettura del sito: oltre alle gallerie,
+                   sono presenti le entità Sito, Item e Autori.
+                </p>
+          <!-- 4.3 Schema delle dipendenze -->
+            <li id="schemaDipendenze" class="mb-4 fw-bold">Schema dipendenze</li>
+              <img class="img-fluid"  src="./img/schemiWebProjectPlan/schemaDipendenze.png" alt="schema delle dipendenze">
+              <p class="mt-4">Il diagramma delle dipendenze rappresenta la struttura logico-funzionale del progetto, evidenziando i collegamenti 
+                tra le diverse sezioni e la loro interdipendenza. Al vertice troviamo la <strong>Home</strong>, che costituisce il punto di accesso principale e il nodo da 
+                cui si diramano tutte le altre aree del sito. <br>
+                L'utente può accedere alle principali sezioni, come la galleria delle rappresentazioni, la sezione sugli autori, la mappa e l'elenco sugli Yōkai,
+                 e la pagina di registrazione/login dell'utente. 
+                La sezione dedicata all'elenco degli <strong>Yōkai</strong> ha un ruolo centrale, organizza le creature in 3 sottogruppi(malevoli, benevoli e neutrali) 
+                e permette di raggiungere facilmente le rappresentazioni dello Yōkai desiderato. La <strong>Galleria</strong> rappresenta 
+              un altro fulcro, poichè raccoglie e mostra le opere artistiche legate ai vari Yōkai, permettendo l'accesso ai singoli
+               Item, cioè alle schede dettagliate delle opere. <br>
+              La <strong>Mappa</strong> funge da strumento di naviazione alternativa, consentendo una visualizzazione spaziale dei contesti geografici
+               associati agli Yōkai. <br>
+              Gli <strong>Autori</strong> rappresentano un'altra componente fondamentale: questa sezione raccoglie le informazioni sugli artisti,
+               fornendo un elenco delle loro opere e rappresentando un altro percorso di accesso per poter raggiungere gli Item. <br>
+              La sezione <strong>In evidenza</strong> ha lo scopo di valorizzare i contenuti selezionati mettendo in rislato opere o Yōkai particolarmente
+               interessanti(sulla base di quante volte sono stati salvati dagli utenti).
+            <br>   L'area di <strong>Login</strong> permette di accedere ad una pagina utente in cui si potranno salvare i contenuti preferiti
+                e visualizzati. <br>
+               L’elemento <strong>Item</strong>  rappresenta il punto di convergenza dell’intero sistema: ogni item è infatti raggiungibile da più sezioni e conterranno le informazioni relative alle rappresentazioni artistiche sugli Yōkai designate.
+            </p>
+          <!-- 4.4 Catogorie descrittive deil singolo item -->
+              <li id="categorie" class="fw-bold">Categorie descrittive</li>
+                <p>Queste sono le possibili categorie descrittive di un singolo item all'interno della collezione:</p>
+                    <ul>
+                        <li> <span class="fw-bold">Titolo:</span> [titolo della rappresentazione]</li>
+                        <li><span class="fw-bold">Autore:</span> [autore/i che hanno realizzato la rappresentazione]</li>
+                        <li> <span class="fw-bold">Descrizione:</span> [descrizione della rappresentazione]</li>
+                        <li><span class="fw-bold">Yōkai rappresentato/i:</span> [nome dello/degli Yōkai]</li>
+                        <li><span class="fw-bold">Data:</span> [quando è stata realizzata]</li>
+                        <li><span class="fw-bold">Tecnica:</span> [quali tecniche sono state utilizzate per realizzarla]</li>
+                        <li><span class="fw-bold">Formato:</span> [misure della grandezza della rappresentazione]</li>
+                        <li><span class="fw-bold">Collezione:</span> [dove è collocata in questo momento la rappresentazione]</li>
+                        <li><span class="fw-bold">Codice identificativo:</span> [codice univoco che identifica la rappresentazione all'interno del database del sito]</li>
+                      </ul>
+            </ol>
+
+        <!-- 5. Layout -->
+         <li id="layout" class="titleWebProjectPlan fw-bolder">Layout</li>
+          <ol>
+            <li>
+              <p id="wireframeHome" class="fw-bold">Home wireframe</p>
+              <img class="card-img w-50 h-50" src="./img/wireframes/Home.png" alt="wireframe home">
+            </li><!-- 5.1 wireframe Home-->
+            <p class="mt-4">Questo è il wireframe della <strong>Home</strong> del sito. Presenta una testata composta da un immagine con al suo interno
+              il logo e il nome del sito. Sotto di esso troviamo la barra di navigazione primaria dove oltre alle varie voci, troviamo
+              una barra di ricerca e l'icona del profilo utente. <br>
+              Successivamente la pagina è divisa in 5 macro sezioni: la prima sono due immagini che indicano rispettivamente i due cataloghi principali, 
+              quindi l'utente attraverso una navigazione di tipo contestuale può accedere facilmente alle due principali raccolte. <br>
+              La seconda sezione trova oltre che una spiegazione di cosa sono gli Yokai, un carosello con alcune immagini. 
+            <br> La terza sezione mostra una sezione in cui l'utente può accedere alla pagina della mappa attraverso l'utilizzo di un bottone.<br>
+              La quarta sezione presenta tre card, le schede in evidenza che porteranno rispettivamente a tre item differenti. 
+              L'ultimo blocco è quello che fa riferimento all'iscrizione ad una newsletter, troviamo rispettivamente 
+              un inserimento testo per immettere l'email e un bottone per inviare. 
+              Infine troviamo il footer, che è suddiviso in 3 parti, dove saranno collocate
+              le informazioni di contatto, di info e legali. 
+            </p>
+            <!-- 5.2 wireframe Galleria -->
+            <li>
+              <p id="wireframeGalleria" class="fw-bold">Galleria wireframe</p>
+              
+                <img class="card-img w-50 h-50" src="./img/wireframes/Galleria.png" alt="wireframe galleria">
+              <p class="mt-4">Questo è il wireframe della <strong>galleria</strong> della collezione, caratterizzato da una parte superiore formata da i filtri che poi si applicheranno per la scelta dei vari item attraverso un bottone.
+                Dopodichè troviamo  un blocco che racchiude la vera e propria galleria con un formato di 3x3 item per pagina. Ogni item  sarà correlato di un titolo e/o descrizione. 
+                Alla fine della pagina troviamo un Pagination per poter scorrere fra le varie pagine del catalogo.
+              </p>
+              
+            </li>
+            <!-- 5.3 wireframe Item -->
+            <li class="mt-2">
+              <p id="wireframeItem" class="fw-bold">Item wireframe</p>
+                <img class="card-img w-50 h-50" src="./img/wireframes/Item.png" alt="wireframe item">
+                <p class="mt-4">Questo è il wireframe della pagina inerente all'oggetto della collezione(<strong>Item</strong>). Nella parte alta troviamo l'immagine raffiguarante
+                  la rappresentazione artistica con sotto di essa una tabella contentente tutti i dati relativi alla rappresentazione(Tiolo, Autore, Data, Tecnica ecc.). 
+                  Sulla destra troviamo una sezione formata da tre card di eventuali altre rappresentazioni consigliate o affini.
+                </p>
+              </li>
+
+              <!-- 5.3 wireframe Mappa -->
+            <li class="mt-2">
+              <p id="wireframeItem" class="fw-bold">Mappa wireframe</p>
+                <img class="card-img w-50 h-50" src="./img/wireframes/Mappa.png" alt="wireframe Mappa Giappone">
+                <p class="mt-4">Questo wireframe rappresenta la pagina dedicata alla <strong>Mappa del Giappone</strong>.
+                  Nella parte superiore è presente un primo blocco di testo introduttivo che guida l’utente alla comprensione
+                    delle funzionalità offerte dalla pagina. A seguire si trova la mappa interattiva vera e propria, 
+                    completamente cliccabile, mentre nella parte inferiore è collocata una legenda che elenca le diverse regioni rappresentate.
+                </p>
+              </li>
+          </ol> 
+      
+         <!-- 6. Usabilità -->
+        <li id="usabilità" class="titleWebProjectPlan fw-bolder">Usabilità</li>
+          <p>
+                Per garantire un'esperienza utente fluida, accessibile e coerente, il sito è stato progettato seguendo i principi di usabilità che riguardano
+                 architettura, aspetto visivo e coerenza stilistica.
+                <br>
+                Dal punto di vista architetturale, la struttura del sito è organizzata in <strong>sezioni</strong>, in box che raggruppano gli elementi appartenenti alla stessa categoria.
+                L'uso dei <strong>breadcrumb</strong> consente all'utente di orientarsi facilmente, indicando in modo visibile la posizione corrente e permettendo un rapido ritorno alle sezioni precendenti.
+                Inoltre, il <strong>logo</strong> presente nella barra di navigazione e nell'immagine del sito è sempre cliccabile riportando direttamente alla Home page.
+                <br>
+                L'aspetto grafico è stato curato per garantire una coerenza visiva in tutte le pagine. Utilizzata una palette di colori basata sulle tonalità del beige e del marrone,
+                 contribuendo a mantenere un contrasto equilibrato e una lettura confortevole.
+                 Dal punto di vista tipografico, il sito utilizza font leggibili e coerenti. 
+                 <br>Elementi di interfaccia come <strong>button</strong>, <strong>icon</strong> e <strong>card</strong> sono facilmente riconoscibili
+                  e sono coerenti in tutto il sito.
+                Implementati diversi <strong>feedback visivi</strong> per migliorare l'interazione: ad esempio, il cambio di colore al passaggio del mouse
+                 che comunicano all'utente il compimento di un azione.
+              <br>  Particolare attenzione è stata posta alla <strong>navigazione su dispositivi mobile</strong>:
+               i contentui sono completamente responsivi, e gli elementi principali come card o pulsanti interamente cliccabili semplificando l'interazione anche su schermi ridotti.
+            </p>
+
+      <!-- 7. Servizi -->
+        <li id="servizi" class="titleWebProjectPlan fw-bolder">Servizi</li>
+          <p>
+            All’interno della collezione digitale dedicata alle rappresentazioni sugli <strong>Yōkai</strong>,
+             sono stati integrati diversi strumenti e componenti interattivi per favorire un’esperienza
+              di <strong>navigazione accessibile e dinamica</strong>. <br>
+              Tra i principali strumenti adottati:
+              <ol>
+                <li>
+                 <strong>Card</strong>: Ogni elemento della collezione è presentato attraverso una card completamente cliccabile che unisce immagine e titolo.
+                  Le card consentono una navigazione visiva e intuitiva, permettendo all’utente di accedere rapidamente ai dettagli delle singole opere o degli Yōkai.
+                </li>
+                <li> <strong>Menu a tendina (Dropdown)</strong>: Utilizzati per organizzare categorie e sottosezioni, i menu a tendina offrono un accesso ordinato e
+                   immediato alle diverse aree del sito, facilitando la consultazione.</li>
+                   <li>
+                    <strong>Accordion (Collapse)</strong>:Implementato per i filtri di ricerca, consente di espandere o ridurre blocchi di contenuto.
+                     Questo sistema rende la navigazione più pulita, permettendo di mostrare solo le informazioni di interesse.
+                   </li>
+                   <li>
+                   <strong>Modal</strong>: Finestra di approfondimento che si apre sopra la pagina principale, utilizzata per visualizzare dettagli aggiuntivi 
+                   senza interrompere la navigazione. Questo strumento è impiegato sul sito per poter espandere le immagini relative ai singoli elementi della
+                    collezione.
+                   </li>
+                   <li>
+                   <strong>Slideshow / Carosello</strong>: Inserito nella home page, permette di visualizzare una selezione di rappresentazioni o Yōkai popolari attraverso lo scorrimento di una sequenza di immagini da parte dell'utente. 
+                   </li>
+              </ol>
+                  È stata inoltre implementata una <strong>mappa interattiva</strong> realizzata tramite gli elementi <strong>img</strong>
+                   e <strong>map</strong>, che consente all’utente di esplorare le diverse regioni muovendo il cursore e selezionandole 
+                    con un semplice click. In questo modo è possibile visualizzare l’elenco degli Yōkai associati all’area geografica scelta.
+            </p>
+
+      <!-- 8. Bibliografia e Sitografia -->
+        <li id="bibliografia" class="titleWebProjectPlan fw-bolder">Bibliografia e sitografia</li>
+          <p>Web application:</p>
+            <ul>
+              <li>Wireframes realizzati con Balsamiq: <a href="https://balsamiq.com/" target="_blank">https://balsamiq.com/</a></li>
+              <li>Mappe realizzate con draw.io: <a href="https://www.drawio.com/" target="_blank">https://www.drawio.com/</a></li>
+              <li>Per i font all'interno della pagina utilizzato Google Fonts: <a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a></li>
+              <li>Logo realizzato attraverso l'utilizzo dell'intelligenza artificiale Gemini: <a href="https://gemini.google.com" target="_blank">https://gemini.google.com</a></li>
+              <li>Creazione Mappa interattiva attraverso l'utlizzo del sito <a href="https://www.image-map.net/">https://www.image-map.net/</a></li>
+              <li>Implementazione dei social attraverso: <a href="https://platform.sharethis.com/">https://platform.sharethis.com/</a></li>
+              <li>Utilizzate icone dalla libreria di Boostrap<a href=" https://icons.getbootstrap.com/"> https://icons.getbootstrap.com/</a></li>
+          </ul>
+            <br>
+          <p>Immagini:</p>
+            <ul>
+              <li>immagini prese da WikiMediaCommons: <a href="https://commons.wikimedia.org/wiki/Pagina_principale">https://commons.wikimedia.org/wiki/Pagina_principale </a></li>
+            </ul>
+            <br>
+             <p>Codice:</p>
+        <ul>
+        <li>Sezioni HowTo W3School e documentazione del framework CSS Bootstrap</li>
+        </ul>
+    </ol>
+       
+</div><!-- fine container -->
+    
+
+ <!-- Footer -->
+  <footer class=" py-4">
+    <hr class="my-2">
+    <div class="container p-1">
+        <div class="row">
+        <!-- Contatti -->
+          <div class="col-md-4">
+            
+            <h3>Contatti</h3>
+          <p>
+              Email: <a href="emailInventata@gmail.com">emailInventata@gmail.com</a><br>
+              Telefono: +39 0123 456789<br>
+              Indirizzo: Via Roma 8, 00100 Roma, Italia
+            </p>
+            <div class="sharethis-inline-follow-buttons"></div>
+          </div>
+        <!-- Link Utili -->
+          <div class="col-md-4">
+            <h3>Link Utili</h3>
+            <ul class="list-unstyled">
+              <li><a href="webProjectPlan.html">Web Project Plan</a></li>
+              <li><a href="#">Chi siamo</a></li>
+            </ul>
+          </div>
+        <!-- Legale -->
+          <div class="col-md-4">
+            <h3>Legale</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">Informativa sulla privacy</a></li>
+              <li><a href="#">Termini e condizioni</a></li>
+              <li><a href="#">Accessibilità</a></li>
+            </ul>
+          </div>
+      </div>
+      <!-- Separatore -->
+      <hr class="my-4">
+
+      <!-- Copyright -->
+      <div class="text-center">
+        <p>
+          &copy; 2025 Yōkai no Bijutsukan –  Progetto sviluppato per fini educativi e culturali.<br>
+        </p>
+      </div>
+    </div>
+  </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
